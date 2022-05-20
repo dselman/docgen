@@ -1,10 +1,12 @@
 # Document Generation using Accord Project Templates
 
 This project illustrates the power of using the Accord Project template stack
-for *type safe* document generation.
+for **type safe** document generation.
 
-> By *type safe* we mean that any errors in the conditional logic of a template are detected
-during authoring time, ensuring that there cannot be runtime errors during template evaluation.
+> By **type safe** we mean that all variables referenced by the template are correct
+and that any errors in the conditional logic of a template are detected
+during authoring time, ensuring that there cannot be runtime errors during 
+template evaluation.
 
 ## Use Case
 
@@ -13,14 +15,14 @@ people often have to perform during document generation.
 
 In this scenario we define a data model for a `Patient`, and then create a document generation
 template that refers to `Patient` properties. We show how to create the model, template, conditional logic
-that allow you to generate a document from a JSON data payload which describes a given patient.
+and formulae that allow you to generate a document from a JSON data payload which describes a given patient.
 
 In addition we show how to use the Accord Project markdown-transformation stack to transform the output
-of document generation to various output formats, including markdown, PDF and HTML.
+of document generation to various output formats, including JSON, markdown, PDF and HTML.
 
 ## Data Model
 
-The data model is defined using the Concerto modelling language in [./model/model.cto]. We define a `PatientClause` with some required and optional properties — a mixture of primitive and complex types.
+The data model is defined using the Concerto modelling language in [model.cto](./model/model.cto). We define a `PatientClause` with some required and optional properties — a mixture of primitive and complex types.
 
 ## Template (Grammar)
 
