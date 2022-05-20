@@ -39,7 +39,9 @@ The template is defined using TemplateMark in [grammar.tem.md](./text/grammar.te
 
 ## Template Logic (Functions)
 
-Expressions and functions are defined using the (type-safe) Ergo functional programming language.
+Expressions and functions are defined using the (type-safe) Ergo functional programming language. 
+
+> Note that inclusion of logic in templates is optional. Many useful templates do not require complex logic.
 
 The Ergo functions are defined in [logic.ergo](./logic/logic.ergo).
 
