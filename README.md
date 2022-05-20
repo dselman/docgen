@@ -8,6 +8,8 @@ and that any errors in the conditional logic of a template are detected
 during authoring time, ensuring that there cannot be runtime errors during 
 template evaluation.
 
+Accord Project templates *bind data models to natural language* via a templating system. Unlike most templating systems this binding is bi-directional.
+
 ## Use Case
 
 This scenario is relatively representative of the type of conditional text generation that
