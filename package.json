@@ -1,0 +1,16 @@
+{
+    "name": "patient-acceptance",
+    "displayName": "Patient Acceptance",
+    "version": "0.1.0",
+    "description": "Patient accepts a procedure",
+    "author": "Dan Selman",
+    "license": "ISC",
+    "accordproject": {
+        "template": "clause",
+        "cicero": "^0.23.0"
+    },
+    "keywords": [
+        "patient",
+        "acceptance"
+    ]
+}

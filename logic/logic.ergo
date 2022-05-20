@@ -1,0 +1,19 @@
+namespace demo
+
+import org.accordproject.time.*
+import org.accordproject.money.*
+
+define function procedureCost(patient:PatientClause) : MonetaryAmount {
+    let allergies = some(patient.allergies) ?? [];
+    let costs = foreach x in allergies 
+        return match(x.cost) with let? cost 
+            then cost.doubleValue 
+        else 0.0;
+    return MonetaryAmount{
+        doubleValue: 100.0 + sum(costs),
+        currencyCode: GBP
+    }
+}
+
+contract Demo over PatientClause {
+}

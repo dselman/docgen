@@ -1,0 +1,32 @@
+{
+    "$class": "demo.PatientClause",
+    "name": "Matt Roberts",
+    "dob": "1975-03-20T00:00:00.000+01:00",
+    "procedure": "teeth whitening",
+    "clauseId": "bfd5d165-c3ab-4cb1-91ac-2cda250aeb0c",
+    "hasAllergies" : true,
+    "address" : {
+      "country" : "USA",
+      "state" : "ME"
+    },
+    "allergies" : [
+      {
+        "$class" : "demo.Allergy",
+        "name" : "Paracetamol",
+        "cost" : {
+          "$class" : "org.accordproject.money.MonetaryAmount",
+          "doubleValue" : 25.5,
+          "currencyCode" : "GBP"
+        }
+      },
+      {
+        "$class" : "demo.Allergy",
+        "name" : "Hay Fever",
+        "cost" : {
+          "$class" : "org.accordproject.money.MonetaryAmount",
+          "doubleValue" : 45.8,
+          "currencyCode" : "GBP"
+        }
+      }
+    ]
+  }

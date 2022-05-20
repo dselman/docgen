@@ -1,0 +1,26 @@
+namespace demo
+
+import org.accordproject.contract.Clause from https://models.accordproject.org/accordproject/contract.cto
+import org.accordproject.money.MonetaryAmount from https://models.accordproject.org/money@0.2.0.cto
+
+concept Allergy {
+  o String name
+  o MonetaryAmount cost optional
+}
+
+concept Address {
+  o String country
+  o String state
+}
+
+/**
+ * The template model
+ */
+asset PatientClause extends Clause {
+  o Address address optional
+  o String name
+  o DateTime dob
+  o String procedure
+  o Boolean hasAllergies
+  o Allergy[] allergies
+}
