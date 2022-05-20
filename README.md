@@ -26,7 +26,7 @@ The data model is defined using the Concerto modelling language in [model.cto](.
 
 ## Template (Grammar)
 
-The template is defined using TemplateMark in [./text/grammar.tem]. The template contains:
+The template is defined using TemplateMark in [grammar.tem](./text/grammar.tem). The template contains:
 1. Formatted text, using Markdown syntax
 2. Variables using the `{{name}}` syntax
 3. Formatted locale specific date variables using the `{{dob as "DD/MM/YYYY"}}` syntax to format a `DateTime`
