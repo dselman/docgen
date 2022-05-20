@@ -222,6 +222,10 @@ One of the unique characteristics of the Accord Project template stack is that i
 function in **BOTH DIRECTIONS:** either generating text from a template + JSON, **OR** 
 extracting JSON from text + template.
 
+> This is useful as (in some cases) it can allow the textual representation of the clause
+to be serialized as the canonical representation - or to be used for data interchange, 
+collaboration or versioning.
+
 Parsing the following markdown:
 
 ```
