@@ -1,6 +1,6 @@
 # Document Generation using Accord Project Templates
 
-This project illustrates the power of using the Accord Project template stack
+This project illustrates the power of using the [Accord Project(https://docs.accordproject.org) template stack
 for **type safe** document generation.
 
 > By **type safe** we mean that all variables referenced by the template are correct
