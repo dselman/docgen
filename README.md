@@ -215,7 +215,7 @@ markus transform --from markdown --to html --input draft.md --output draft.html
 ## Parse
 
 One of the unique characteristics of the Accord Project template stack is that it can
-function in **BOTH DIRECTIONS** either generating text from a template + JSON, **OR** 
+function in **BOTH DIRECTIONS:** either generating text from a template + JSON, **OR** 
 extracting JSON from text + template.
 
 Parsing the following markdown:
