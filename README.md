@@ -63,7 +63,7 @@ Converts JSON data to text via a template. Using data:
 cat data-allergies.json                                                       
 {
     "$class": "demo.PatientClause",
-    "name": "Matt Roberts",
+    "name": "Tammy Template",
     "dob": "1975-03-20T00:00:00.000+01:00",
     "procedure": "teeth whitening",
     "clauseId": "bfd5d165-c3ab-4cb1-91ac-2cda250aeb0c",
@@ -104,7 +104,7 @@ cicero draft --data data-allergies.json  --output draft.md --unquoteVariables
 14:26:27 - INFO: Patient Acceptance
 ----
 
-The patient Matt Roberts born on 19/03/1975 hereby accepts the procedure teeth whitening.
+The patient Tammy Template born on 19/03/1975 hereby accepts the procedure teeth whitening.
 
 Patient has declared the following allergies:
 1. Paracetamol
@@ -124,7 +124,7 @@ Now for a patient without allergies:
 cat data.json                                                                 
 {
     "$class": "demo.PatientClause",
-    "name": "Matt Roberts",
+    "name": "Tammy Template",
     "dob": "1975-03-20T00:00:00.000+01:00",
     "procedure": "teeth whitening",
     "address" : {
@@ -145,7 +145,7 @@ cicero draft --data data.json --output draft.md --unquoteVariables
 14:30:10 - INFO: Patient Acceptance
 ----
 
-The patient Matt Roberts born on 19/03/1975 hereby accepts the procedure teeth whitening.
+The patient Tammy Template born on 19/03/1975 hereby accepts the procedure teeth whitening.
 
 Patient has no declared allergies.
 
@@ -161,7 +161,7 @@ Finally, for a patient without allergies and without an address:
 cat data-no-address.json 
 {
     "$class": "demo.PatientClause",
-    "name": "Matt Roberts",
+    "name": "Tammy Template",
     "dob": "1975-03-20T00:00:00.000+01:00",
     "procedure": "teeth whitening",
     "hasAllergies" : false,
@@ -178,7 +178,7 @@ cicero draft --data data-no-address.json --output draft.md --unquoteVariables
 14:31:40 - INFO: Patient Acceptance
 ----
 
-The patient Matt Roberts born on 19/03/1975 hereby accepts the procedure teeth whitening.
+The patient Tammy Template born on 19/03/1975 hereby accepts the procedure teeth whitening.
 
 Patient has no declared allergies.
 

@@ -1,7 +1,7 @@
 Patient Acceptance
 ----
 
-The patient Matt Roberts born on 19/03/1975 hereby accepts the procedure teeth whitening.
+The patient Tammy Template born on 19/03/1975 hereby accepts the procedure teeth whitening.
 
 Patient has no declared allergies.
 
