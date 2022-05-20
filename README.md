@@ -43,7 +43,7 @@ The Ergo functions are defined in [logic.ergo](./logic/logic.ergo).
 
 ## Template Metadata
 
-Templates are packaged as zip files and must include a [package.json](./package.json) manifest field, which includes name, description, version, keywords etc that make the template searchable within a template library.
+Templates are packaged as zip files and must include a [package.json](./package.json) manifest file, which includes name, description, version, keywords etc that make the template searchable within a template library.
 
 ## Install Tools
 
