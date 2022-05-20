@@ -3,6 +3,15 @@ namespace demo
 import org.accordproject.time.*
 import org.accordproject.money.*
 
+/**
+ * Calculates the cost of a procedure for a patient
+ * Note that allergies are optional and
+ * that allergy costs are also optional.
+ * The Ergo compiler enforces that we handle
+ * missing data safely/correctly ensuring that
+ * we cannot get runtime failures due to missing
+ * optional data values.
+ */
 define function procedureCost(patient:PatientClause) : MonetaryAmount {
     let allergies = some(patient.allergies) ?? [];
     let costs = foreach x in allergies 
