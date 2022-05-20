@@ -43,7 +43,7 @@ The Ergo functions are defined in [logic.ergo](./logic/logic.ergo).
 
 ## Template Metadata
 
-Templates are packaged as zip files and must include a [package.json](./package.json) manifest file, which includes name, description, version, keywords etc that make the template searchable within a template library.
+Templates are typically packaged as zip files and must include a [package.json](./package.json) manifest file, which includes name, description, version, keywords etc that make the template searchable within a template library.
 
 ## Install Tools
 
@@ -194,10 +194,7 @@ To convert output to JSON tree:
 markus transform --from markdown --to ciceromark --input draft.md --output draft.json
 ```
 
-```
-cat draft.json 
-{"$class":"org.accordproject.commonmark.Document","xmlns":"http://commonmark.org/xml/1.0","nodes":[{"$class":"org.accordproject.commonmark.Heading","level":"2","nodes":[{"$class":"org.accordproject.commonmark.Text","text":"Patient Acceptance"}]},{"$class":"org.accordproject.commonmark.Paragraph","nodes":[{"$class":"org.accordproject.commonmark.Text","text":"The patient Matt Roberts born on 19/03/1975 hereby accepts the procedure teeth whitening."}]},{"$class":"org.accordproject.commonmark.Paragraph","nodes":[{"$class":"org.accordproject.commonmark.Text","text":"Patient has no declared allergies."}]},{"$class":"org.accordproject.commonmark.Paragraph","nodes":[{"$class":"org.accordproject.commonmark.Text","text":"The cost of the procedure will be: £100.00."}]},{"$class":"org.accordproject.commonmark.Paragraph","nodes":[{"$class":"org.accordproject.commonmark.Text","text":"Each party hereby irrevocably agrees that process may be served on it in"},{"$class":"org.accordproject.commonmark.Softbreak"},{"$class":"org.accordproject.commonmark.Text","text":"any manner authorized by the Laws of the county of London, UK."}]}]}% 
-```
+[JSON output](./draft.json)
 
 To convert output to PDF:
 
@@ -205,11 +202,15 @@ To convert output to PDF:
 markus transform --from markdown --to pdf --input draft.md --output draft.pdf
 ```
 
+[PDF output](./draft.pdf)
+
 To convert output to HTML:
 
 ```
 markus transform --from markdown --to html --input draft.md --output draft.html
 ```
+
+[HTML output](./draft.html)
 
 ## Parse
 
