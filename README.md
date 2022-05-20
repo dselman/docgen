@@ -35,9 +35,15 @@ The template is defined using TemplateMark in [grammar.tem.md](./text/grammar.te
 6. Calling a user defined function and formatting the result as a monetary amount using `{{% procedureCost(contract) as "K0,0.00"%}}`
 7. Defining a function inline to perform complex string concatenation based on data
 
+## Template Logic (Functions)
+
 Expressions and functions are defined using the (type-safe) Ergo functional programming language.
 
 The Ergo functions are defined in [logic.ergo](./logic/logic.ergo).
+
+## Template Metadata
+
+Templates are packaged as zip files and must include a [package.json](./package.json) manifest field, which includes name, description, version, keywords etc that make the template searchable within a template library.
 
 ## Install Tools
 
